@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+<label><input type="checkbox" id="one" onchange="fun1()"> Hello</label>
+    <input type="radio" name="r1" value="5"> 1
+    <input type="radio" name="r1" value="55"> 2
+    <input type="radio" name="r1" value="555"> 3
+    <button onclick="fun2()"> Checked what element is choice.</button>
+
+    <select name ="" id="mySelect" onchange="fun3()">
+        <option value="">Apple</option>
+        <option value="">MS</option>
+        <option value="">Nokia</option>
+        <option value="">LG</option>
+    </select>
+
+    <input type="range" min="0" max="100" step="10" oninput="fun4()" id="r2">
+    <div id="test"></div>
+
+
+
+    <div class="block1">
+        <p> Top left
+            <input type="range" id="rtl" min="0" max="100" value="0" oninput="fun5()">
+            <input type="text" id="ttl" value="0">
+        </p>
+
+        <p> Top right
+            <input type="range" id="rtr" min="0" max="100" value="0" oninput="fun5()">
+            <input type="text" id="ttr" value="0">
+        </p>
+
+        <p> Bottom left
+            <input type="range" id="rbl" min="0" max="100" value="0"oninput="fun5()">
+            <input type="text" id="tbl" value="0">
+        </p>
+
+        <p> Bottom right
+            <input type="range" id="rbr" min="0" max="100" value="0" oninput="fun5()">
+            <input type="text" id="tbr" value="0">
+        </p>
+    </div>
+    <div id="block"></div>
+
+
+
+
+    <script src='first.js'></script>
+</body>
+</html>
